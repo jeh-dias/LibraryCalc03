@@ -24,3 +24,5 @@ namespace Finance
     }
 }
 ```
+
+![Nuget](https://img.shields.io/nuget/dt/LibraryCalc03.svg)
