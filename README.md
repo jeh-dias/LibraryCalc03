@@ -6,3 +6,20 @@ Biblioteca para operações aritméticas
 
 ##  How to install
 Install-Package LibraryCalc03 -Version 1.0.1
+
+```cs
+namespace Finance
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+            var point = new PointTest(2, 2);
+            var operation = new Operation();
+            var result = operation.sum(45,77,-7);
+            Console.WriteLine("result " + result);
+        }
+    }
+}
+```
