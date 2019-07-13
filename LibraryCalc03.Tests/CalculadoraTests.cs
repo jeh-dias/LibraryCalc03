@@ -63,6 +63,20 @@ namespace LibraryCalc03.Tests
             Assert.True((point.x * point.y) == resultado);
         }
 
+        [Theory]
+        [InlineData(8, 8, 8)]
+        [InlineData(10, -15, 21)]
+        [InlineData(-8, 8, 18)]
+        [InlineData(0, 0, 0)]
+        public void MultiplicacaoAtualizadaSucesso(int x, int y,int z)
+        {
+            var point = new PointTest(30, 20);
+            var operation = new Operation();
+
+            var resultado = operation.multiplication(point);
+            Assert.True((point.x * point.y) == resultado);
+        }
+
         [Fact]
         public void DivisaoSucesso()
         {

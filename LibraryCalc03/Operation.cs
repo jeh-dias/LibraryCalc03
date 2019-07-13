@@ -19,6 +19,11 @@ namespace LibraryCalc03
             return point.x * point.y;
         }
 
+        public int multiplication(int x, int y, int z)
+        {
+            return x * y * z;
+        }
+
         public int subtraction(PointTest point)
         {
             return point.x - point.y;
