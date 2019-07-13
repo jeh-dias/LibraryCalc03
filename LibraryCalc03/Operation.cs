@@ -24,6 +24,11 @@ namespace LibraryCalc03
             return point.x - point.y;
         }
 
+        public int subtraction(int x, int y, int z)
+        {
+            return (x - y) - z;
+        }
+
         public int sum(PointTest point)
         {
             return point.x + point.y;

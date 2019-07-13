@@ -39,6 +39,20 @@ namespace LibraryCalc03.Tests
             Assert.True((point.x - point.y) == resultado);
         }
 
+        [Theory]
+        [InlineData(1, 1, 1)]
+        [InlineData(10, 15, 21)]
+        [InlineData(-8, 8, 18)]
+        [InlineData(-1, -5, -9)]
+        public void SubtracaoAtualizadaSucesso(int x, int y, int z)
+        {
+            var operation = new Operation();
+
+            var resultado = operation.subtraction(x, y, z);
+            int subtraction = ((x - y) - z);
+            Assert.True(subtraction == resultado);
+        }
+
         [Fact]
         public void MultiplicacaoSucesso()
         {
