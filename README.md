@@ -7,6 +7,7 @@ Biblioteca para operações aritméticas
 ##  How to install
 Install-Package LibraryCalc03 -Version 1.0.1
 
+## How to use
 ```cs
 namespace Finance
 {
